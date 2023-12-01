@@ -1,0 +1,75 @@
+/* EVENT MODAL */
+%eventHeader {
+  background-color: transparent;
+}
+%eventIconCircle {
+  background-color: $main-color;
+}
+%eventCard {
+  &:hover {
+    background-color: hsla(0, 0%, 0%, 0.4);
+    border: 2px solid $hover-color;
+  }
+  background-color: hsla(0, 0%, 0%, 0.4);
+  border: 2px solid $main-color;
+}
+%eventStatusBrand,
+%eventStatusLabel {
+  color: $main-color;
+  %eventStatusGreen {
+    color: cv('colors.success');
+  }
+}
+%eventRSVPCount {
+  background-color: $main-color;
+  %eventRSVPIcon,
+  .colorHeaderSecondary-g5teka {
+    color: #fff;
+  }
+}
+
+// EVENT INFO
+%eventInfoHeader {
+  %tabBarItem {
+    &:hover {
+      border-bottom-color: $hover-color;
+    }
+    &%tabBarItemSelected,
+    &:active {
+      border-bottom-color: $main-color;
+    }
+  }
+}
+%eventInfoContentContainer {
+  background: transparent;
+}
+%eventInfoIconCircle {
+  background-color: $main-color;
+}
+
+// CREATE EVENT
+%createEventProgressBar {
+  background-color: hsla(0, 0%, 100%, 0.3);
+  &%createEventProgressBarSelected {
+    background-color: $main-color;
+  }
+  + .colorMuted_ae2200 {
+    color: hsla(0, 0%, 100%, 0.3);
+  }
+  + .colorBrand_be5f58 {
+    color: $main-color;
+  }
+}
+%createEventCreateStageContainer {
+  background-color: transparent;
+}
+%createEventTextInput {
+  background: transparent;
+}
+%themeDark %createEventPreviewCard {
+  background-color: hsla(0, 0%, 0%, 0.4);
+  border: 2px solid $main-color;
+}
+%createEventIconContainer {
+  background-color: $main-color;
+}
